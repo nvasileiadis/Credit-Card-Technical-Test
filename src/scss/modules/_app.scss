@@ -1,0 +1,244 @@
+.wrapper {
+	background-color: white;
+	height: 100vh;
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	overflow-y: auto;
+}
+
+header {
+	width: 100%;
+
+	h1 {
+		font-weight: 400;
+		color: #999999;
+		margin: 0;
+	}
+}
+
+.main {
+	display: inline-block;
+	float: left;
+	border-right: 1px solid lightgrey;
+	padding: 20px;
+	text-transform: uppercase;
+	color: #A4A4A4;
+	width: 60%;
+}
+
+label {
+	width: 100px;
+	text-align: right;
+	display: inline-block;
+	margin: 10px 20px 10px 0;
+}
+
+.card-details {
+	padding-bottom: 20px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.card-name,
+.card-number {
+	input {
+		width: calc(100% - 125px);
+	}
+}
+
+
+.fa-question-circle {
+	color: $c_highlight;
+}
+
+.sidebar {
+	display: inline-block;
+	width: 30%;
+	margin: 0 20px;
+
+	h3 {
+		font-weight: 500;
+		margin: 0;
+		display: inline-block;
+	}
+}
+
+.change {
+	display: inline-block;
+	float: right;
+	text-transform: uppercase;
+
+	a {
+		color: $c_highlight;
+	}
+}
+
+.card-start-date,
+.card-expiration-date {
+	display: inline-block;
+}
+
+.card-start-date {
+	float: left;
+}
+
+.card-expiration-date {
+	float: none;
+
+	label {
+		width: initial;
+		margin-left: 15px;
+		margin-right: 10px;
+	}
+}
+
+.card-cvv {
+	input {
+		width: 50px;
+	}
+}
+
+.amount-details {
+	border-top: 1px solid lightgrey;
+	padding: 20px 0 20px 0;
+	margin-top: 1px;
+
+	.currency {
+		display: inline-block;
+		background-color: #e5e5e5;
+		width: 30px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		height: 30px;
+		padding-top: 4px;
+		text-align: center;
+		border: 1px solid lightgrey;
+	}
+
+	input {
+		left: -4px;
+		position: relative;
+		width: 120px;
+	}
+}
+
+.btn-group {
+	margin-top: 20px;
+	margin-left: 120px;
+
+	.btn-pay {
+		color: white;
+		background-color: $c_highlight;
+		border: none;
+		padding: 10px;
+		text-transform: uppercase;
+		border-radius: 2px;
+	}
+
+	.btn-cancel {
+		color: grey;
+		background-color: transparent;
+		border: none;
+		text-transform: uppercase;
+		margin-left: 20px;
+	}
+}
+
+.shipping-details,
+.billing-details {
+	line-height: 1.5;
+}
+
+.upper {
+	margin-bottom: 15px;
+}
+
+.shipping-details {
+	padding-bottom: 20px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.billing-details {
+	border-top: 1px solid lightgrey;
+	margin-top: 1px;
+	padding-top: 20px;
+}
+
+input, select {
+	color: grey;
+}
+
+input {
+	&::placeholder {
+	color: grey;
+	}
+}
+
+input[type=text], input[type=number], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 5px 0px 5px 10px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, input[type=number]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 5px 0px 5px 10px;
+  margin: 5px 1px 5px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+select {
+	padding: 5px;
+	background-color: transparent;
+	border-color: lightgrey;
+
+	&:focus, &:active {
+		box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		border: 1px solid rgba(81, 203, 238, 1);	
+	}
+}
+
+/* Tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted grey; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltipcontent {
+    visibility: hidden;
+    width: 300px;
+    background-color: lightgrey;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    margin-top: 10px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltipcontent {
+    visibility: visible;
+}
+

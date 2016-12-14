@@ -1,0 +1,114 @@
+@media only screen and (max-width:520px) {
+
+	.wrapper {
+		width: 100%;
+	}
+
+	header {
+		h1 {
+			text-align: center;
+		}
+	}
+
+	.main {
+		border: none;
+	}
+
+	.main,
+	.sidebar {
+		width: 100%;
+	}
+
+	.sidebar {
+		.upper {
+			margin-right: 30px;
+		}
+	}
+
+}
+@media only screen and (max-width:840px) {
+
+	label {
+		text-align: left;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	input {
+		width: 100%;
+
+	}
+
+	.card-name,
+	.card-number {
+		input {
+			width: 100%;
+		}
+	}
+
+	.card-start-date,
+	.card-expiration-date {
+		width: 100%;
+		margin-top: 10px;
+
+		label {
+			text-align: left;
+			width: initial;
+			margin-right: 10px;
+		}
+
+		select {
+			float: right;
+		}
+	}
+
+	.card-expiration-date {
+		label {
+			margin: 0 10px 0 0;
+		}
+	}
+
+	.card-cvv {
+		width: 100%;
+		margin-top: 10px;
+
+		label {
+			text-align: left;
+			width: initial;
+			margin-right: 10px;
+		}
+
+		input {
+			float: right;
+		}
+	} 
+
+	.amount-details {
+		width: 100%;
+		label {
+			width: 100%;
+		}
+
+		input {
+			width: calc(100% - 35px);
+		}
+
+		.btn-group {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+}
+@media only screen and (max-width:1024px) {
+
+}
+@media only screen and (max-width:1140px) {
+
+}
+@media only screen and (max-width:1280px) {
+
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+}

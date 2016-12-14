@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Pulsar Technical Test</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <script src="assets/components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header" role="banner">
+        <h1>Buy something awesome</h1>
+      </header>
+
+      <main class="main" role="main">
+        <div class="card-details">
+          <div class="card-name">
+            <label for="card-name">Name on Card</label>
+            <input type="text" name="card-name" required>
+          </div>
+          <div class="card-number">
+            <label for="card-number">Card Number</label>
+            <input type="number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+          </div>
+          <div class="card-validates">
+            <div class="card-start-date">
+              <label for="valid-date">Valid From</label>
+              <select name="valid-date" required>
+                <option value="" disabled selected>MM/YY</option>
+                <option value="12/16">12/16</option>
+                <option value="01/17">01/17</option>
+                <option value="02/17">02/17</option>
+                <option value="03/17">03/17</option>
+              </select>
+            </div>
+            <div class="card-expiration-date">
+              <label for="exp-date">Expires</label>
+              <select name="exp-date" required>
+                <option value="" disabled selected>MM/YY</option>
+                <option value="12/17">12/17</option>
+                <option value="01/18">01/18</option>
+                <option value="02/18">02/18</option>
+                <option value="03/18">03/18</option>
+              </select>
+            </div>
+          </div>
+          <div class="card-cvv">
+            <label for="cvv">Cvv <i class="fa fa-question-circle tooltip" aria-hidden="true"><span class="tooltipcontent"><img src="assets/img/cvv.png" alt="CVV Instructions Image"></span></i></label>
+            <input type="number" name="cvv" required>
+          </div>
+        </div>
+        <div class="amount-details">
+          <label for="amount">Amount to pay</label>
+          <div class="currency">£</div>
+          <input type="number" name="amount" placeholder="123.45" required>
+          <div class="btn-group">
+            <button class="btn-pay">Pay Now</button>
+            <button class="btn-cancel">Cancel</button>
+          </div>
+        </div>
+      </main>
+
+      <aside class="sidebar" role="complementary">
+        <div class="shipping-details">
+          <div class="upper">
+            <h3>Ship to:</h3>
+            <span class="change"><a href="#">Change</a></span>
+          </div>
+          <div class="shipping-address">
+            Team Pulsar<br/>
+            Round Foundry Media Center<br/>
+            David Street<br/>
+            Holbeck<br/>
+            Leeds<br/>
+            LS2 5QP
+          </div>
+        </div>
+        <div class="billing-details">
+        <div class="upper">
+          <h3>Billing address:</h3>
+          <span class="change"><a href="#">Change</a></span>
+        </div>
+          <div class="billing-address">
+            Same as shipping address
+          </div>
+        </div>
+      </aside>
+      
+    </div>
+    <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+  </body>
+</html>
